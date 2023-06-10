@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Notice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    textarea {
+      width: 300px;
+      margin-bottom: 10px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Create Notice</h1>
+  <form action="create_notice.php" method="POST">
+    <div>
+      <label for="title">Notice Title:</label>
+      <input type="text" id="title" name="title" required>
+    </div>
+    <div>
+      <label for="description">Notice Description:</label>
+      <textarea id="description" name="description" required></textarea>
+    </div>
+    <button type="submit">Create</button>
+  </form>
+</body>
+</html>
